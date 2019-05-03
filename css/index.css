@@ -237,6 +237,11 @@ footer {
 .home .intro img {
   max-width: 800px;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    max-width: 500px;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
