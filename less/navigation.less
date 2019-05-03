@@ -1,8 +1,17 @@
 // Navigation code here
 nav {
+    width: 100%;
     .flex-center();
     flex-direction: column;
     max-width: 1000px;
+    margin: auto;
+    position: fixed;
+    opacity: 1.5;
+    right: 0;
+    left: 0;
+    @media @phone {
+        max-width: 100%;
+    }
     background-color: whitesmoke;
     padding-bottom: 1em;
     border-bottom: .75px solid darken(whitesmoke, 5%);
@@ -20,6 +29,9 @@ nav {
             margin-left: 1em;
             margin-right: 1em;
             font-weight: bold;
+            &:hover {
+                .nav-animation(2s);
+            }
         }
     }
 }
