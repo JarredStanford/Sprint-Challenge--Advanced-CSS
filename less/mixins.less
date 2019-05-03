@@ -1,1 +1,21 @@
 // Mixins Here
+.buttons(@radius, @background) {
+    color: white;
+    border-radius: @radius;
+    background-color: @background;
+    padding: 8px 10px;
+    width: 29.5%;
+    text-align: center;
+    font-size: 1.8em;
+    &:hover {
+        background-color: white;
+        color: @background;
+        border: .5px solid black;
+    }
+}
+
+.flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
