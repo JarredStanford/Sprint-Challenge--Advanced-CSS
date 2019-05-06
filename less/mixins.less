@@ -1,1 +1,39 @@
 // Mixins Here
+.buttons(@radius, @background) {
+    color: white;
+    border-radius: @radius;
+    background-color: @background;
+    padding: 8px 10px;
+    width: 29.5%;
+    text-align: center;
+    font-size: 1.8em;
+    &:hover {
+        background-color: white;
+        color: @background;
+        border: .5px solid black;
+    }
+}
+
+.flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.4);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.nav-animation(@duration) {
+    animation: bounce @duration;
+}
